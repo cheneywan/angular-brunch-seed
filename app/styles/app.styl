@@ -1,0 +1,35 @@
+// 书写顺序
+//   .item {
+//      mixin
+//      变量
+//      定位   -  position 一系
+//      可视   -  display visibility float clear overflow clip
+//      盒模型 -  box-sizing margin padding width min-width max-width height min-height max-height
+//      布局   -  list-style table-layout empty-cells border-spacing border-collapse
+//      字体   -  font 一系
+//      段落   -  content cursor vertical-align line-height white-space letter-spacing word-spacing
+//               text-align text-decoration text-indent text-transform 
+//      修饰   -  opacity color text-shadow border outline border-radius box-shadow background}
+
+// 变量命名
+//   1. 驼峰
+//   2. {元素}{名称}{程度}{状态}
+
+// 推荐
+//   mixin, @extend
+//   darken, lighten
+//   oocss
+
+// 类名命名
+//   目前暂时不考虑任何选择器性能问题
+//   和 javascript 选择器相关的类都为驼峰式的命名，名称必须由一个以上单词构成，非必须情况下不加任何样式
+//   负责表现的类名单词之间使用短横杠`-`连接
+
+@import 'nib'
+
+// Apply a natural box layout model to all elements.
+// http://paulirish.com/2012/box-sizing-border-box-ftw/
+// *
+//   box-sizing: border-box
+
+

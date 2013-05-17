@@ -1,0 +1,46 @@
+
+.bootrow (@gridRowWidth, @gridColumnWidth, @gridGutterWidth) {
+  .bootstrap-detail {
+    width: @gridRowWidth;
+  }
+  .bootstrap-detail .row-fluid {
+    margin-top: -@gridGutterWidth;
+    width: (@gridColumnWidth * @gridColumns) + (@gridGutterWidth * (@gridColumns - 1)) - 20px * 2;
+    .span4 {
+      margin-top: @gridGutterWidth;
+    }
+  }
+}
+
+.bootrow(@gridRowWidth, @gridColumnWidth, @gridGutterWidth);
+
+@media (min-width: 1200px) {
+  .bootrow(@gridRowWidth1200, @gridColumnWidth1200, @gridGutterWidth1200);
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .bootrow(@gridRowWidth768, @gridColumnWidth768, @gridGutterWidth768);
+}
+
+@media (max-width: 767px) {
+  .bootrow(auto, 0, 0);
+
+  .bootstrap-detail .row-fluid {
+    .span4 {
+      margin-top: @gridGutterWidth;
+    }
+  }
+}
+
+.bootstrap-detail .row-fluid {
+  .span4:nth-child(3n+1) {
+    margin-left: 0;
+  }
+}
+
+.plate [class^=icon-] {
+  height: 45px;}
+
+.plate .media-heading {
+  margin: 0 0 5px 0;}
+

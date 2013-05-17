@@ -1,0 +1,1 @@
+../../../submodule/bootstrap/js/bootstrap-collapse.js
