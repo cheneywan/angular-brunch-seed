@@ -15,14 +15,14 @@ angular.module('app', [
   '$routeProvider'
   '$locationProvider'
 
-  ($routeProvider, $locationProvider) ->
-    $routeProvider
-      .when('/', templateUrl: 'partials/home.html')
+($routeProvider, $locationProvider) ->
+  $routeProvider
+    .when('/', templateUrl: 'partials/home.html')
 
-      .otherwise redirectTo: '/'
+    .otherwise redirectTo: '/'
 
-    # Without server side support html5 must be disabled.
-    $locationProvider.html5Mode(false).hashPrefix("!")
+  # Without server side support html5 must be disabled.
+  $locationProvider.html5Mode(false).hashPrefix("!")
 ])
 
 angular.element(document).ready ->

@@ -31,17 +31,11 @@ exports.config =
     javascripts:
       joinTo:
         'js/app.js': /^app/
-        'js/vendor.js': /^vendor/
+        'js/vendor.js': /^(bower_components|vendor)/
         'test/scenarios.js': /^test(\/|\\)e2e/
       order:
         before: [
-          'vendor/scripts/jquery.js'
           'vendor/scripts/bootstrap/bootstrap-tooltip.js'
-
-          'vendor/scripts/angular/angular.js'
-          'vendor/scripts/angular/angular-resource.js'
-          'vendor/scripts/angular/angular-cookies.js'
-
         ]
 
     stylesheets:

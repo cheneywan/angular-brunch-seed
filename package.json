@@ -15,16 +15,16 @@
     "start": "make server"
   },
   "dependencies": {
-    "brunch": "~1.5.0",
     "javascript-brunch": "~1.5.1",
-    "coffee-script-brunch": "~1.5.0",
+    "coffee-script-brunch": "~1.7.0",
     "coffeelint-brunch": "~1.5.0",
     "css-brunch": "~1.5.0",
     "stylus-brunch": "~1.6.0",
     "less-brunch": "~1.5.0",
     "uglify-js-brunch": "~1.5.0",
     "clean-css-brunch": "~1.5.0",
-    "auto-reload-brunch": "~1.6.1"
+    "auto-reload-brunch": "~1.6.1",
+    "brunch": "~1.7.0"
   },
   "devDependencies": {
     "chai": "1.2.0",

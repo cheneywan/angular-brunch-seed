@@ -1,0 +1,30 @@
+{
+  "name": "angular-brunch-seed",
+  "version": "0.0.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.js",
+    "angular-cookies": "https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular-cookies.js",
+    "angular-resource": "https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular-resource.js",
+    "jquery": "1.10.2",
+    "bootstrap": "~3.0.0-rc1"
+  },
+  "overrides": {
+    "angular-cookies": {
+      "dependencies": {
+        "angular": "https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.js"
+      }
+    },
+    "angular-resource": {
+      "dependencies": {
+        "angular": "https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.js"
+      }
+    }
+  }
+}
